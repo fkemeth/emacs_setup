@@ -342,7 +342,7 @@ window. "
     (unless (window-live-p viewwin)
       (mu4e-error "Cannot get a message view"))
     (select-window viewwin)
-    (switch-to-buffer (mu4e~headers-get-loading-buf))
+(switch-to-buffer (mu4e~headers-get-loading-buf))
     (mu4e~proc-view docid mu4e-view-show-images decrypt))
     )
 
