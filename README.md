@@ -128,6 +128,8 @@ $ git clone https://github.com/magnars/s.el.git
 $ git clone https://github.com/Wilfred/ht.el.git
 $ git clone https://github.com/magnars/dash.el.git
 $ git clone https://github.com/iqbalansari/mu4e-alert
+$ git clone https://github.com/jrblevin/markdown-mode.git
+$ git clone https://code.orgmode.org/bzg/org-mode.git
 ```
  
 * Configure `~/.emacs` for  mu4e
@@ -269,15 +271,11 @@ $ git clone https://github.com/oneKelvinSmith/monokai-emacs
 ### Syntax Highlighting
 
 1. Markdown
-```
-$ cd ~/Repos/emacs/
-$ git clone https://github.com/jrblevin/markdown-mode.git
-```
 Edit `~/.emacs`:
 
 ``` cl
 ;;; Markdown Mode
-(add-to-list 'load-path "~/Repos/markdown-mode/")
+(add-to-list 'load-path "~/Repos/emacs/markdown-mode/")
 (require 'markdown-mode)
 ```
 
