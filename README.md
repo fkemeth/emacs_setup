@@ -376,4 +376,13 @@ Edit `~/.emacs`
 (setq org-log-done 'time)
 ;;; set tags
 (setq org-tag-alist '(("work" . ?w) ("home" . ?h) ("read" . ?r)("organize" . ?o)))
+
+;;; org-latex-export-to-pdf keybind
+(eval-after-load "org"
+  '(progn
+     (define-key org-mode-map (kbd "\C-C \C-c") 'org-latex-export-to-pdf)
+     )
+  )
+
 ```
+
